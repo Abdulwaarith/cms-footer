@@ -1,0 +1,176 @@
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+
+@font-face {
+  font-family: "Candara";
+  src: url("//db.onlinewebfonts.com/t/e662339992c4abf5b43f537391bd3169.eot");
+}
+
+/* resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+:root {
+  --clr-content: rgba(31, 71, 68, 1);
+  --Pastel-Turquoise: rgba(31, 71, 68, 1);
+  --light-Pastel-Turquoise: rgba(5, 130, 142, 1);
+  --lighter-pastel-Turquoise: rgba(41, 205, 201, 1);
+  --lightest-pastel-Turquoise: rgba(71, 163, 156, 1);
+  --toggle-lightmode: rgba(102, 252, 241, 1);
+  --toggle-btn: rgba(42, 45, 60, 1);
+  --white: rgba(255, 255, 255, 1);
+  --bg-gray: #f3f3f3;
+  --bg-color-2: #fff;
+  --accordion-head-clr: #0b0f13;
+  --accordion-clr: #0b0f13;
+  --accordion-bg: #acaab0;
+  --footer-dark: #f3f3f3;
+  --footer-text: #15171e;
+  --fa-clr: #fff;
+}
+/* dark theme/light theme toggle */
+.dark-mode {
+  --clr-content: rgba(255, 255, 255, 1);
+  --hero-section-paragraph: rgba(255, 255, 255, 1);
+  --bg-gray: rgba(31, 34, 45, 1);
+  --toggle-lightmode: rgba(198, 197, 201, 1);
+  --accordion-head-clr: #ffffff;
+  --accordion-clr: rgba(41, 205, 201, 1);
+  --accordion-bg: #2a2d3c;
+  --footer-dark: #0b0f13;
+  --footer-text: #fff;
+  --fa-clr: #15171e;
+  --bg-color-2: #000;
+}
+
+footer {
+  padding: 0%;
+  padding-top: 3%;
+  border: 0;
+  display: flex;
+  background-color: var(--footer-dark);
+  justify-content: space-around;
+  margin-bottom: 0%;
+  position: sticky;
+  font-family: Inder;
+}
+
+footer > img {
+  padding: 0%;
+  margin: 0;
+  border: 0;
+  vertical-align: bottom;
+  position: relative;
+  bottom: 10px;
+  left: -7px;
+}
+
+footer .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 25px; */
+  border-radius: 5px;
+  color: var(--fa-clr);
+  background-color: var(--accordion-head-clr);
+}
+
+footer > .fa:hover {
+  opacity: 0.7;
+}
+.flink,
+#logotxt {
+  font-size: 1.35rem;
+  line-height: 2.2rem;
+}
+.flink,
+.p-head {
+  color: var(--footer-text);
+}
+.flink:link {
+  text-decoration: none;
+  color: var(--footer-text);
+}
+
+.flink:visited {
+  color: var(--footer-text);
+}
+
+#dsyne {
+  padding: 0%;
+  margin-top: -3rem;
+  border: 0;
+  position: relative;
+}
+
+#logotxt {
+  padding: 0%;
+  margin-top: 0%;
+  border: 0;
+  position: relative;
+  top: -15%;
+  color: var(--footer-text);
+}
+
+.socialicon {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 70%;
+  top: -8%;
+}
+
+/* Media queries for footer */
+@media screen and (max-width: 750px) {
+  footer {
+    /* margin-top: 10%;
+    margin-left: 10%; */
+    padding: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: sticky;
+  }
+
+  .socialicon {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  #fimg {
+    bottom: 0px;
+  }
+
+  .fa {
+    margin: 5px 10px 10px 0px;
+  }
+  #dsyne {
+    width: 92%;
+    text-align: center;
+  }
+  .hide2 {
+    display: none;
+  }
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+  footer p {
+    margin: 10px 10px 10px 0px;
+  }
+}
